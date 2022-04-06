@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="7" skipped="3" tests="15" time="0.578" timestamp="2022-04-06T14:55:40.127380" hostname="DESKTOP-QCGMC85"><testcase classname="test_Calculate" name="test_add[3-2-5]" time="0.004" /><testcase classname="test_Calculate" name="test_add[2-4-6]" time="0.004" /><testcase classname="test_Calculate" name="test_add[10-2-22]" time="0.006"><skipped type="pytest.xfail" message="" /></testcase><testcase classname="test_Calculate" name="test_add[2-4-5]" time="0.004"><skipped type="pytest.xfail" message="" /></testcase><testcase classname="test_Calculate" name="test_add[5-6-7]" time="0.006"><skipped type="pytest.xfail" message="" /></testcase><testcase classname="test_Calculate" name="test_add[7-8-15]" time="0.003" /><testcase classname="test_Calculate" name="test_sub[9-9-18]" time="0.004"><failure message="assert (9 - 9) == 18">a1 = 9, b1 = 9, c1 = 18
+
+    @pytest.mark.parametrize("a1,b1,c1",[(9,9,18),(2,3,5),(3,3,6)])
+    def test_sub(a1,b1,c1):
+        #x=32
+        #y=22
+        result=Calculate.sub(a1,b1)
+&gt;       assert a1-b1==c1
+E       assert (9 - 9) == 18
+
+test_Calculate.py:22: AssertionError</failure></testcase><testcase classname="test_Calculate" name="test_sub[2-3-5]" time="0.005"><failure message="assert (2 - 3) == 5">a1 = 2, b1 = 3, c1 = 5
+
+    @pytest.mark.parametrize("a1,b1,c1",[(9,9,18),(2,3,5),(3,3,6)])
+    def test_sub(a1,b1,c1):
+        #x=32
+        #y=22
+        result=Calculate.sub(a1,b1)
+&gt;       assert a1-b1==c1
+E       assert (2 - 3) == 5
+
+test_Calculate.py:22: AssertionError</failure></testcase><testcase classname="test_Calculate" name="test_sub[3-3-6]" time="0.004"><failure message="assert (3 - 3) == 6">a1 = 3, b1 = 3, c1 = 6
+
+    @pytest.mark.parametrize("a1,b1,c1",[(9,9,18),(2,3,5),(3,3,6)])
+    def test_sub(a1,b1,c1):
+        #x=32
+        #y=22
+        result=Calculate.sub(a1,b1)
+&gt;       assert a1-b1==c1
+E       assert (3 - 3) == 6
+
+test_Calculate.py:22: AssertionError</failure></testcase><testcase classname="test_Calculate" name="test_mul[2-2-0]" time="0.005"><failure message="assert (2 * 2) == 0">a3 = 2, b3 = 2, c3 = 0
+
+    @pytest.mark.parametrize("a3,b3,c3",[(2,2,0),(3,4,5),(9,8,1)])
+    def test_mul(a3,b3,c3):
+        #x=32
+        #y=22
+        result=Calculate.mul(a3,b3)
+&gt;       assert a3*b3==c3
+E       assert (2 * 2) == 0
+
+test_Calculate.py:29: AssertionError</failure></testcase><testcase classname="test_Calculate" name="test_mul[3-4-5]" time="0.004"><failure message="assert (3 * 4) == 5">a3 = 3, b3 = 4, c3 = 5
+
+    @pytest.mark.parametrize("a3,b3,c3",[(2,2,0),(3,4,5),(9,8,1)])
+    def test_mul(a3,b3,c3):
+        #x=32
+        #y=22
+        result=Calculate.mul(a3,b3)
+&gt;       assert a3*b3==c3
+E       assert (3 * 4) == 5
+
+test_Calculate.py:29: AssertionError</failure></testcase><testcase classname="test_Calculate" name="test_mul[9-8-1]" time="0.004"><failure message="assert (9 * 8) == 1">a3 = 9, b3 = 8, c3 = 1
+
+    @pytest.mark.parametrize("a3,b3,c3",[(2,2,0),(3,4,5),(9,8,1)])
+    def test_mul(a3,b3,c3):
+        #x=32
+        #y=22
+        result=Calculate.mul(a3,b3)
+&gt;       assert a3*b3==c3
+E       assert (9 * 8) == 1
+
+test_Calculate.py:29: AssertionError</failure></testcase><testcase classname="test_Calculate" name="test_div[2-3-1]" time="0.004"><failure message="assert (2 / 3) == 1">a4 = 2, b4 = 3, c4 = 1
+
+    @pytest.mark.parametrize("a4,b4,c4",[(2,3,1),(6,2,3),(3,3,1)])
+    def test_div(a4,b4,c4):
+        #x=32
+        #y=22
+        result=Calculate.div(a4,b4)
+&gt;       assert a4/b4==c4
+E       assert (2 / 3) == 1
+
+test_Calculate.py:36: AssertionError</failure></testcase><testcase classname="test_Calculate" name="test_div[6-2-3]" time="0.004" /><testcase classname="test_Calculate" name="test_div[3-3-1]" time="0.003" /></testsuite></testsuites>
