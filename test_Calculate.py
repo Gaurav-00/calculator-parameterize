@@ -13,7 +13,7 @@ def test_add(a,b,c):
     #x=32
     #y=22
     result=Calculate.add(a,b)
-    assert a+b==c
+    assert  a+b==c
 @pytest.mark.parametrize("a1,b1,c1",[(9,9,18),(2,3,5),(3,3,6)])
 def test_sub(a1,b1,c1):
     #x=32
@@ -42,3 +42,21 @@ def test_div(a4,b4,c4):
 
 #how to stroke test cases after getting failures
 
+'''
+to get report in xml format use this command in terminal-:
+pytest --junitxml="result.xml"
+'''
+
+
+'''
+to get report in html format use in terminal following two commands 
+1.pip install pytest-html
+2.pytest --html=file_nm.html 
+example pytest --html=report.html
+'''
+'''
+To  get test report in json format use this 2 commands 
+1.pip install pytest-json-report  press enter again give second command
+2.pytest --json-report --json-report-summary
+
+'''

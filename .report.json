@@ -1,0 +1,6 @@
+{"created": 1649237990.7791207, "duration": 0.5937070846557617, "exitcode": 1, "root": "C:\\Users\\icon\\PycharmProjects\\Project", "environment": {}, "summary": {"xpassed": 3, "xfailed": 3, "failed": 7, "passed": 2, "total": 15, "collected": 15}}
+{
+  "To  get test report in json format use this 2 commands "
+  "1.pip install pytest-json-report  press enter again give second command"
+  "2.pytest --json-report --json-report-summary"
+}
