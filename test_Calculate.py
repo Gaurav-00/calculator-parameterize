@@ -8,6 +8,7 @@ import pytest
 #@pytest.mark.skip(reason="currently no need to execute")  #to do not run a function
 #expected failure-:the failure is expected and we got and unexpected pass-:we get error but we also get pass
 
+#to stop at amxfail we use command-: pytest --maxfail=2
 def test_add(a,b,c):
     #x=32
     #y=22
@@ -38,3 +39,6 @@ def test_div(a4,b4,c4):
     #2. find perimeter of rec take appropriate value from user
     #3.find area of square
     #4.also wr ite a pytest for it
+
+#how to stroke test cases after getting failures
+
